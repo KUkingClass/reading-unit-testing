@@ -14,7 +14,7 @@
     - 전역 또는 내부 상태를 변경하지 않는 코드에만 적용 가능 (**Side-effect**가 없다)
     - 확인할 수 있는 결과는 출력 값 (리턴 값) 뿐이다.
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled.png)
+![Untitled](./assets/Untitled.png)
 
 ```java
 public class PriceEngine {
@@ -38,7 +38,7 @@ public void Discount_of_two_products() {
     - products의 수에 0.01을 곱한 것을 0.2로 제한한다.
     - products를 collection에 추가 하지도 않고 데이터베이스에 유지 하지도 않는다.
     
-    ![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%201.png)
+    ![Untitled](./assets/Untitled%201.png)
     
 
 ## state-based style
@@ -46,7 +46,7 @@ public void Discount_of_two_products() {
 - 작업이 완료된 후 시스템 상태를 확인하는 것
     - 상태(state) : SUT 자체, 협력자, 데이터베이스나 파일 시스템 등의 프로세스 외부 의존성 등
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%202.png)
+![Untitled](./assets/Untitled%202.png)
 
 ```java
 public class Order {
@@ -76,7 +76,7 @@ public void Adding_a_product_to_an_order() {
 
 - Mock을 사용하여 테스트 중인 시스템과 협력자 간의 통신을 확인한다.
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%203.png)
+![Untitled](./assets/Untitled%203.png)
 
 ```java
 // [Fact]
@@ -190,7 +190,7 @@ sut.Comments.Should().BeEquivalentTo(comment);
     - 리팩토링 내성을 가지기 위해 필요한 노력
     - 유지 보수 비용
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%204.png)
+![Untitled](./assets/Untitled%204.png)
 
 - 가급적이면 출력 기반 테스트 코드를 작성하도록 하지만, 대부분의 객체지향 언어에는 해당되지 않는다는 문제
 
@@ -205,9 +205,9 @@ sut.Comments.Should().BeEquivalentTo(comment);
 - 순수 함수를 이용한 프로그래밍
     - 숨은 입출력이 없는 함수
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%205.png)
+![Untitled](./assets/Untitled%205.png)
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%206.png)
+![Untitled](./assets/Untitled%206.png)
 
 - 숨은 입출력?
     - 사이드 이펙트 (Side-effect)
@@ -236,7 +236,7 @@ public boolean isExistedInShop(Product product) {
     - 결정을 내리는 코드 : 사이드 이펙트가 필요없다. 함수를 사용해 작성 가능
     - 결정에 따라 작용하는 코드 → 함수에 의해 만들어진 결정을 DB 변경, 메세지 전송, 인스턴스 상태 변경 등의 가시적인 부분으로 변환
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%207.png)
+![Untitled](./assets/Untitled%207.png)
 
 - 가변 쉘 : 함수형 코어에 전달할 입력을 준비. 결정에 따라 동작
 - 함수형 코어 : 비즈니스 로직 수행. 결정 생성
@@ -245,7 +245,7 @@ public boolean isExistedInShop(Product product) {
 
 ### 실제 리팩토링
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%208.png)
+![Untitled](./assets/Untitled%208.png)
 
 - 가장 최근 파일의 마지막 줄에 방문자 이름과 방문 시간을 추가하는 시스템
     - 방문자 이름 + “;” + 방문 시간
@@ -297,13 +297,13 @@ public class AuditManager {
         - 파일 시스템은 Audit 시스템에 입력을 넣어줌
         - Audit 시스템은 출력을 File System으로 보내주고 테스트는 이것을 검증하는 것
     
-    ![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%209.png)
+    ![Untitled](./assets/Untitled%209.png)
     
 - Mock 사용
     - 테스트가 외부 시스템과 밀접하게 결합
     - 파일과 관련된 모든 연산을 별도의 IFileSytem으로 추출 → AuditManager에 주입한다.
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%2010.png)
+![Untitled](./assets/Untitled%2010.png)
 
 - IFileSystem
     - 파일 시스템과 커뮤니케이션 하는 부분을 클래스로 만든다.
@@ -408,7 +408,7 @@ public void A_new_file_is_created_when_the_current_file_overflows() {
     - AuditManager : input을 받아서 결정을 생성하기만 함
     - Persister : 정보를 모아서 전달, 결정을 받아서 그에대한 사이드 이펙트 처리
 
-![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%2011.png)
+![Untitled](./assets/Untitled%2011.png)
 
 - AuditManager가 FileSystem을 주입받는 것이 아니라 FileContent를 주입받는다.
     - 비즈니스 로직을 처리하는데 필요한 “정보” 자체를 받는 것
@@ -567,7 +567,7 @@ architecture
     );
     ```
     
-    ![Untitled](%5BUnitTesting%206%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20e7edbcf7b86d4555bf69527f392dfc99/Untitled%2012.png)
+    ![Untitled](./assets/Untitled%2012.png)
     
 
 - 순수 함수가 아니라 출력 기반 테스트를 할 수 없다.
