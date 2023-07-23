@@ -16,12 +16,12 @@
 - 4장. 좋은 단위 테스트의 4대 요소 [@janghoosa](https://github.com/janghoosa)
 - 5장. 목과 테스트 취약성 [@mimwin](https://github.com/mimwin)
 - 6장. 단위 테스트 스타일 [@sujin-kk](https://github.com/sujin-kk)
-- 7장. 가치 있는 단위 테스트를 위한 리팩터링
+- 7장. 가치 있는 단위 테스트를 위한 리팩터링 [@goldggyul](https://github.com/goldggyul)
 
 ### 3부. 통합 테스트
-- 8장. 통합 테스트를 하는 이유
-- 9장. 목 처리에 대한 모범 사례
-- 10장. 데이터베이스 테스트
+- 8장. 통합 테스트를 하는 이유 [@Lee-Jiseung](https://github.com/Lee-Jiseung)
+- 9장. 목 처리에 대한 모범 사례 [@LifesLike](https://github.com/LifesLike)
+- 10장. 데이터베이스 테스트 [@sujin-kk](https://github.com/sujin-kk) 
 
 ### 4부. 단위 테스트 안티 패턴
-- 11장. 단위 테스트 안티 패턴
+- 11장. 단위 테스트 안티 패턴 [@janghoosa](https://github.com/janghoosa)
