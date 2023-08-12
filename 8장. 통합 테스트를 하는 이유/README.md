@@ -31,7 +31,7 @@
 - 단위 테스트는 도메인 모델을 다룬다면, 통합 테스트는 프로세스 외부 의존성과 도메인 모델을 연결하는 코드를 확인한다.
 - 코드 사분면에서 컨트롤러 사분면에 속하는 코드를 다룬다
 
-![Untitled](/images/Untitled.png)
+![Untitled](images/Untitled.png)
 
 ### 다시 보는 테스트 피라미드
 
@@ -162,7 +162,7 @@
 
  
 
-![Untitled](/images/Untitled%201.png)
+![Untitled](images/Untitled%201.png)
 
 ### 어떤 시나리오를 테스트할까?
 
