@@ -23,7 +23,7 @@
 - 개발하는 동안 Model DB 인스턴스 → `develop` 처럼 최신화, Production DB → `main(master)`
 - Model DB와 Production DB를 비교하고 업그레이드 스크립트를 생성 후 production 환경에서 해당 스크립트를 실행한다.
 
-![Untitled](%5BUnitTesting%5D%2010%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%205f450b19d69944949b77c9d5021dd8f9/Untitled.png)
+![Untitled](./assets/Untitled.png)
 
 - Model DB를 바로 사용하는 것은 데이터베이스 스키마를 유지/보수하는데 끔찍한 방법이다.
     - 변경 내역 추적 불가 (운영 환경에서 버그 재생성 가능성)
@@ -61,19 +61,19 @@
     - 데이터베이스를 한 버전에서 다른 버전으로 전환하는 명시적인 마이그레이션 사용
         - tool을 사용하여 동기화 하는 것이 아니라 직접 업그레이드 스크립트를 생성한다. (tool은 스키마에서 문서화 되지 않은 변경 사항 탐지에 용이)
 
-![Untitled](%5BUnitTesting%5D%2010%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%205f450b19d69944949b77c9d5021dd8f9/Untitled%201.png)
+![Untitled](./assets/Untitled%201.png)
 
 - State가 아닌 Migration이 SQL 스크립트로 표시되어 git에 저장된다.
     - Flyway, Liquibase
 - ex. FluentMigrator를 사용하여 마이그레이션
 
-![Untitled](%5BUnitTesting%5D%2010%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%205f450b19d69944949b77c9d5021dd8f9/Untitled%202.png)
+![Untitled](./assets/Untitled%202.png)
 
 - `state-based`는 (git에 해당 상태를 저장함으로써) state를 명시적으로 만들고, comparison tool이 암묵적으로 마이그레이션을 제어
 - `migartion-based`는 마이그레이션을 명시적으로 만들지만 state는 암시적으로 유지.
     - 데이터베이스 상태를 직접 보는 것은 불가능하므로 마이그레이션에서 구성해야함
 
-![Untitled](%5BUnitTesting%5D%2010%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%205f450b19d69944949b77c9d5021dd8f9/Untitled%203.png)
+![Untitled](./assets/Untitled%203.png)
 
 - DB의 상태는 merge conflicts를 쉽게 처리 vs 마이그레이션은 데이터 이동을 쉽게 처리
     - 마이그레이션을 통해 스키마에 모든 수정 사항을 적용하라
@@ -359,7 +359,7 @@ companyFromDb
     - 읽기에는 도메인 모델이 필요하지 않다.
     - 읽기 테스트의 경우는 실제 데이터베이스에서 바로 통합 테스트 가능
 
-![Untitled](%5BUnitTesting%5D%2010%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%205f450b19d69944949b77c9d5021dd8f9/Untitled%204.png)
+![Untitled](./assets/Untitled%204.png)
 
 ## Repository 테스트를 해야하는가?
 
