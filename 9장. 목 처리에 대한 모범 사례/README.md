@@ -67,7 +67,7 @@ void changing_email_from_corporate_to_non_corporate() {
 
 이 테스트는 이상적이지 않다. 목을 사용할 때는 **시스템의 끝**에서 비관리 의존성과의 상호작용을 검증해야 한다.
 
-![Untitled](images/img1.png)
+![시스템 구조도](images/img1.png)
 
 우리 시스템에서 외부 시스템인 메시지 버스를 사용하기 위해서 `Bus`와 `MessageBus` 두 단계의 래퍼를 두었다. `Bus` 는 우리 시스템의 가장 바깥에서 메시지 버스 라이브러리를 사용하기 위한 래퍼이고, `MessageBus` 는 Bus 위의 래퍼로 도메인 기능을 위한 래퍼이다. 
 
